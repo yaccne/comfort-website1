@@ -10,7 +10,8 @@ const quotes = [
     "I choose you, not because I need you, but because I want you.",
     "The right person won’t leave, no matter how hard things get.",
     "She wasn’t his to own, but she was his to cherish.",
-    "I'll trade them all for a minute more"
+    "I'll trade them all for a minute more.";
+    
 ];
 
 const quoteButton = document.getElementById('quoteButton');
