@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #a8e6cf 0%, #dcedc1 100%); /* Light blue and sage green gradient */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+    position: relative;
+}
+
+/* Tulip background image */
+
+/* Snowflakes animation */
+@keyframes fall {
+    0% { transform: translateY(-10%); }
+    100% { transform: translateY(110vh); }
+}
+
+.snowflake {
+    position: absolute;
+    top: -10%;
+    color: #ffffff; /* White snowflakes */
+    font-size: 1.5rem;
+    animation: fall linear infinite;
+    user-select: none; /* Prevent text selection */
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1; /* Ensure container is above tulips and snowflakes */
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #3a7ca5; /* Light blue for the heading */
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #4a4a4a; /* Darker text for readability */
+}
+
+button {
+    background-color: #87bba2; /* Sage green for the button */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6a9c8a; /* Darker sage green on hover */
+}
+
+#quoteDisplay {
+    margin-top: 20px;
+    font-style: italic;
+    color: #3a7ca5; /* Light blue for the quotes */
+    font-size: 1.1rem;
+}
