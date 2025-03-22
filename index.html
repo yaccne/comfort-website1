@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cant stay sad</title>
+    <title>Can't Stay Sad</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="theme-toggle-container">
+        <button id="themeToggle">🌙</button>
+    </div>
     <div class="container">
         <h1>Hey rani</h1>
-        <p>You mean the alot to me. didn't mean to make U sad, remember that I'm here for you, always.</p>
+        <p>You mean a lot to me. I didn't mean to make you sad. Remember that I'm here for you, always.</p>
         <button id="quoteButton">Click here</button>
         <p id="quoteDisplay"></p>
+
+        <!-- Add quote section -->
+        <div class="quote-management">
+            <input type="text" id="newQuoteInput" placeholder="Enter a new quote">
+            <button id="addQuoteButton">Add Quote</button>
+            <button id="deleteQuoteButton">Delete Last Quote</button>
+        </div>
     </div>
     <script src="index.js"></script>
 </body>
